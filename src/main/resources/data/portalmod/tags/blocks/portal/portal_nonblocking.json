@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "portalmodexpanded:debris",
-    "portalmodexpanded:tile_debris"
+    "portalmodexpanded:tile_debris",
+    "portalmodexpanded:single_auto_portal"
   ]
 }

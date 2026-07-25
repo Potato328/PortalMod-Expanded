@@ -19,13 +19,20 @@ public class ModTileEntities {
 
     public static final RegistryObject<TileEntityType<CameraP2TileEntity>> CAMERA_P2 = TILE_ENTITY.register("camera_p2", () -> TileEntityType.Builder.of(CameraP2TileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getCameraP2Blocks)).build(null));
 
+    public static final RegistryObject<TileEntityType<SingleAutoPortalTileEntity>> SINGLE_AUTOPORTAL = TILE_ENTITY.register("single_autoportal", () -> TileEntityType.Builder.of(SingleAutoPortalTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getSingleAutoPortalBlocks)).build(null));
+
 
     public static Set<Block> getErodedFizzlerBlocks(Set<Block> blocks) {
-        //blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
+        blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
         return blocks;
     }
     public static Set<Block> getCameraP2Blocks(Set<Block> blocks) {
-        //blocks.add(ModBlocks.CAMERA_P2.get());
+        blocks.add(ModBlocks.CAMERA_P2.get());
+        return blocks;
+    }
+
+    public static Set<Block> getSingleAutoPortalBlocks(Set<Block> blocks) {
+        blocks.add(ModBlocks.SINGLE_AUTO_PORTAL.get());
         return blocks;
     }
 

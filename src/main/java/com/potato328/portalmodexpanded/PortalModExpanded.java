@@ -1,8 +1,10 @@
 package com.potato328.portalmodexpanded;
 
 import com.potato328.portalmodexpanded.block.ModBlocks;
-import com.potato328.portalmodexpanded.client.renderer.CameraP2TIleEntityRenderer;
+import com.potato328.portalmodexpanded.client.renderer.CameraP2TER;
+import com.potato328.portalmodexpanded.client.renderer.SingleAutoPortalTER;
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
+import com.potato328.portalmodexpanded.tileentity.SingleAutoPortalTileEntity;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
@@ -86,10 +88,11 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_CUBE_DROPPER.get(), RenderType.translucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_STANDING_BUTTON.get(), RenderType.cutout());
 
-            //RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_EMITTER.get(), RenderType.cutout());
-            //RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_EMITTER.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
 
-            ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TIleEntityRenderer::new);
+            ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TER::new);
+            ClientRegistry.bindTileEntityRenderer(ModTileEntities.SINGLE_AUTOPORTAL.get(), SingleAutoPortalTER::new);
 
 
         });

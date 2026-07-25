@@ -17,7 +17,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 
 @OnlyIn(Dist.CLIENT)
-public class CameraP2TIleEntityRenderer extends TileEntityRenderer<CameraP2TileEntity> {
+public class CameraP2TER extends TileEntityRenderer<CameraP2TileEntity> {
 
     public static final ResourceLocation TEXTURE = new ResourceLocation("portalmodexpanded:entity/camerahead");
     //public static final ResourceLocation TEXTURE = new ResourceLocation("entity/enchanting_table_book");
@@ -27,7 +27,7 @@ public class CameraP2TIleEntityRenderer extends TileEntityRenderer<CameraP2TileE
     //private final CameraP2Model model = new CameraP2Model();
     private final CameraHeadP2Model model = new CameraHeadP2Model();
 
-    public CameraP2TIleEntityRenderer(TileEntityRendererDispatcher dispatcher) {
+    public CameraP2TER(TileEntityRendererDispatcher dispatcher) {
         super(dispatcher);
     }
 

@@ -18,7 +18,7 @@ public class ErodedFizzlerTileEntity extends FizzlerEmitterTileEntity {
 
         boolean rotated = this.getBlockState().getValue(ErodedFizzlerEmitterBlock.ROTATED);
 
-        /*for(int i = 1; i < distance; i++) {
+        for(int i = 1; i < distance; i++) {
 
             if(active) {
 
@@ -36,7 +36,7 @@ public class ErodedFizzlerTileEntity extends FizzlerEmitterTileEntity {
                 this.level.setBlock(this.getBlockPos().relative(facing, i).relative(upDirection), Blocks.AIR.defaultBlockState(), 2);
 
             }
-        }*/
+        }
 
     }
 

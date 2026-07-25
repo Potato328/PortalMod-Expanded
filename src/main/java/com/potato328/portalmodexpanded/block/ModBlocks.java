@@ -81,10 +81,10 @@ public class ModBlocks {
 
 
     //P1 Blocks
-    //public static final RegistryObject<Block> ERODED_LUNECAST_P1 = registerBlock("eroded_lunecast_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)),"eroded");
+    public static final RegistryObject<Block> ERODED_LUNECAST_P1 = registerBlock("eroded_lunecast_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)),"eroded");
 
-    //public static final RegistryObject<Block> ERODED_BLACKPLATE_P1 = registerBlock("eroded_blackplate_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
-    //public static final RegistryObject<Block> ERODED_BLACKPLATE_P1_SLAB = registerBlock("eroded_blackplate_p1_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
+    public static final RegistryObject<Block> ERODED_BLACKPLATE_P1 = registerBlock("eroded_blackplate_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
+    public static final RegistryObject<Block> ERODED_BLACKPLATE_P1_SLAB = registerBlock("eroded_blackplate_p1_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
 
     //Arbored Platforms
     public static final RegistryObject<Block> ARBORED_BLACKPLATE_PLATFORM_1 = registerBlock("arbored_blackplate_platform_1", () -> new PlatformBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"arbored");
@@ -109,12 +109,14 @@ public class ModBlocks {
 
 
     //P1 Testing Elements
-    //public static final RegistryObject<Block> ERODED_FIZZLER_EMITTER = registerBlock("eroded_fizzler_emitter", () -> new ErodedFizzlerEmitterBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion().lightLevel(blockState -> blockState.getValue(FizzlerEmitterBlock.ACTIVE) ? 10 : 0)),"eroded");
-    //public static final RegistryObject<Block> ERODED_FIZZLER_FIELD = registerBlockNoItem("eroded_fizzler_field", () -> new FizzlerFieldBlock(AbstractBlock.Properties.copy(Blocks.AIR).noOcclusion().strength(-1.0F,3600000.0F).noDrops().lightLevel(blockState -> 10)));
-    //public static final RegistryObject<Block> ERODED_CHAMBER_DOOR = registerBlock("eroded_chamber_door", () -> new ChamberDoorBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion()),"eroded");
+    public static final RegistryObject<Block> ERODED_FIZZLER_EMITTER = registerBlock("eroded_fizzler_emitter", () -> new ErodedFizzlerEmitterBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion().lightLevel(blockState -> blockState.getValue(FizzlerEmitterBlock.ACTIVE) ? 10 : 0)),"eroded");
+    public static final RegistryObject<Block> ERODED_FIZZLER_FIELD = registerBlockNoItem("eroded_fizzler_field", () -> new FizzlerFieldBlock(AbstractBlock.Properties.copy(Blocks.AIR).noOcclusion().strength(-1.0F,3600000.0F).noDrops().lightLevel(blockState -> 10)));
+    public static final RegistryObject<Block> ERODED_CHAMBER_DOOR = registerBlock("eroded_chamber_door", () -> new ChamberDoorBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion()),"eroded");
 
     //Experimental
-    //public static final RegistryObject<Block> CAMERA_P2 = registerBlock("camera_p2", () -> new CameraP2Block(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
+    public static final RegistryObject<Block> CAMERA_P2 = registerBlock("camera_p2", () -> new CameraP2Block(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
+
+    public static final RegistryObject<Block> SINGLE_AUTO_PORTAL = registerBlock("single_auto_portal", () -> new SingleAutoPortal(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
 
     //Registers blocks
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, String tab) {
@@ -137,8 +139,8 @@ public class ModBlocks {
         switch (tab) {
             case "arbored":
                 return new Item.Properties().tab(ModInventoryTab.ARBORED_TAB);
-            //case "eroded":
-                //return new Item.Properties().tab(ModInventoryTab.ERODED_TAB);
+            case "eroded":
+                return new Item.Properties().tab(ModInventoryTab.ERODED_TAB);
             case "deco":
                 return new Item.Properties().tab(ModInventoryTab.DECO_TAB);
             default:

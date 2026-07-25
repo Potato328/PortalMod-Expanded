@@ -14,12 +14,12 @@ public class ModInventoryTab {
         }
     };
 
-    /*public static final ItemGroup ERODED_TAB = new ItemGroup("expanded_eroded") {
+    public static final ItemGroup ERODED_TAB = new ItemGroup("expanded_eroded") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModBlocks.ERODED_LUNECAST_P1.get());
         }
-    };*/
+    };
 
     public static final ItemGroup DECO_TAB = new ItemGroup("pm_deco_blocks") {
         @Override

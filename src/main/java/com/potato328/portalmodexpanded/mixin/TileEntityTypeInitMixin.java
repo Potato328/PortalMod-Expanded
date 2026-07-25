@@ -15,7 +15,7 @@ public class TileEntityTypeInitMixin {
     @Inject(method="getChamberDoorBlocks", at=@At("HEAD"), remap = false)
     private static void addChamberDoorBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
         blocks.add(ModBlocks.ARBORED_CHAMBER_DOOR.get());
-        //blocks.add(ModBlocks.ERODED_CHAMBER_DOOR.get());
+        blocks.add(ModBlocks.ERODED_CHAMBER_DOOR.get());
         blocks.add(ModBlocks.ARBORED_CHAMBER_DOOR_P1.get());
     }
 
@@ -26,6 +26,11 @@ public class TileEntityTypeInitMixin {
 
     @Inject(method="getFizzlerEmitterBlocks", at=@At("HEAD"), remap = false)
     private static void addFizzlerBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
-        //blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
+        blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
+    }
+
+    @Inject(method="getAutoPortalBlocks", at=@At("HEAD"), remap = false)
+    private static void addAutoPortalBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
+        blocks.add(ModBlocks.SINGLE_AUTO_PORTAL.get());
     }
 }
