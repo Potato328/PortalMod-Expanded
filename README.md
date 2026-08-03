@@ -10,7 +10,7 @@ Get PortalMod here:<br>
 https://portalmod.net/   
 https://modrinth.com/mod/portalmod   
 
-Join the PortalMod Discord:
+Join the PortalMod Discord:<br>
 https://discord.com/invite/fmaFJWhPFp   
   
 Full Feature List (As of writing):  
