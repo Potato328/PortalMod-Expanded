@@ -1,7 +1,7 @@
 {
   "parent": "portalmod:block/cube_corner_top",
   "textures": {
-    "top": "portalmodexpanded:block/eroded/p1_blackpate_top",
+    "top": "portalmodexpanded:block/eroded/p1_blackplate_top",
     "back": "portalmodexpanded:block/eroded/p1_blackplate",
     "left": "portalmodexpanded:block/eroded/p1_blackplate_panel_top_left",
     "right": "portalmodexpanded:block/eroded/p1_blackplate_panel_top_right"

@@ -2,7 +2,7 @@
   "parent": "portalmod:block/cube_corner_floor",
   "textures": {
     "top": "portalmodexpanded:block/eroded/p1_blackplate_panel_bottom_left",
-    "bottom": "portalmodexpanded:block/eroded/p1_blackplate_panel_bottom_left",
+    "bottom": "portalmodexpanded:block/eroded/p1_blackplate_ceiling_bottom_left",
     "side": "portalmodexpanded:block/eroded/p1_blackplate"
   }
 }

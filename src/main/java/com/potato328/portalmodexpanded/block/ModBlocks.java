@@ -82,6 +82,8 @@ public class ModBlocks {
 
     //P1 Blocks
     public static final RegistryObject<Block> ERODED_LUNECAST_P1 = registerBlock("eroded_lunecast_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)),"eroded");
+    public static final RegistryObject<Block> ERODED_LUNECAST_P1_COLD = registerBlock("eroded_lunecast_p1_cold", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)),"eroded");
+    public static final RegistryObject<Block> ERODED_LUNECAST_P1_WARM = registerBlock("eroded_lunecast_p1_warm", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)),"eroded");
 
     public static final RegistryObject<Block> ERODED_BLACKPLATE_P1 = registerBlock("eroded_blackplate_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
     public static final RegistryObject<Block> ERODED_BLACKPLATE_P1_SLAB = registerBlock("eroded_blackplate_p1_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");

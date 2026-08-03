@@ -4,15 +4,15 @@
     {"when":  {"state": "top"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_p1"}},
     {"when":  {"state": "bottom"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_p1"}},
 
-    {"when": {"axis":  "z", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1"}},
-    {"when": {"axis":  "z", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "y": 180}},
-    {"when": {"axis":  "z", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1"}},
-    {"when": {"axis":  "z", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "y": 180}},
+    {"when": {"axis":  "z", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "uvlock":  true}},
+    {"when": {"axis":  "z", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "y": 180, "uvlock":  true}},
+    {"when": {"axis":  "z", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "uvlock":  true}},
+    {"when": {"axis":  "z", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "y": 180, "uvlock":  true}},
 
-    {"when": {"axis":  "x", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "y": 90}},
-    {"when": {"axis":  "x", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "y": 270}},
-    {"when": {"axis":  "x", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "y":  90}},
-    {"when": {"axis":  "x", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "y": 270}},
+    {"when": {"axis":  "x", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "y": 90, "uvlock":  true}},
+    {"when": {"axis":  "x", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_bottom_p1", "y": 270, "uvlock":  true}},
+    {"when": {"axis":  "x", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "y":  90, "uvlock":  true}},
+    {"when": {"axis":  "x", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_panel_corner_top_p1", "y": 270, "uvlock":  true}},
 
     {"when": {"axis":  "x|z", "state": "floor_bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_floor_bottom_left_p1","y": 180, "uvlock": true}},
     {"when": {"axis":  "x|z", "state": "floor_bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_blackplate_floor_bottom_right_p1", "y": 90, "uvlock": true}},

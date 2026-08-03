@@ -1,0 +1,8 @@
+{
+  "parent": "portalmod:block/cube_corner_floor",
+  "textures": {
+    "top": "portalmodexpanded:block/eroded/p1_lunecast_floor_x_top_left_warm",
+    "bottom": "portalmodexpanded:block/eroded/p1_lunecast_ceiling_x_top_right_warm",
+    "side": "portalmodexpanded:block/eroded/p1_lunecast_warm"
+  }
+}

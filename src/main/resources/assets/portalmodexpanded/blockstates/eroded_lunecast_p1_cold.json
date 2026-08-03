@@ -1,0 +1,27 @@
+{
+  "multipart": [
+    {"when": {"state": "single"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_p1_cold"}},
+    {"when":  {"state": "top"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_top_p1_cold"}},
+    {"when":  {"state": "bottom"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_bottom_p1_cold"}},
+
+    {"when": {"axis":  "z", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_bottom_p1_cold", "uvlock":  true}},
+    {"when": {"axis":  "z", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_bottom_p1_cold", "y": 180, "uvlock":  true}},
+    {"when": {"axis":  "z", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_top_p1_cold", "uvlock":  true}},
+    {"when": {"axis":  "z", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_top_p1_cold", "y": 180, "uvlock":  true}},
+
+    {"when": {"axis":  "x", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_bottom_p1_cold", "y": 90, "uvlock":  true}},
+    {"when": {"axis":  "x", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_bottom_p1_cold", "y": 270, "uvlock":  true}},
+    {"when": {"axis":  "x", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_top_p1_cold", "y":  90, "uvlock":  true}},
+    {"when": {"axis":  "x", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_panel_corner_top_p1_cold", "y": 270, "uvlock":  true}},
+
+    {"when": {"axis":  "x", "state": "floor_bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_x_bottom_left_p1_cold", "y":  180}},
+    {"when": {"axis":  "x", "state": "floor_bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_x_bottom_right_p1_cold", "y":  90}},
+    {"when": {"axis":  "x", "state": "floor_top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_x_top_left_p1_cold", "y":  270}},
+    {"when": {"axis":  "x", "state": "floor_top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_x_top_right_p1_cold"}},
+
+    {"when": {"axis":  "z", "state": "floor_bottom_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_bottom_left_p1_cold", "y":  180}},
+    {"when": {"axis":  "z", "state": "floor_bottom_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_bottom_right_p1_cold", "y":  90}},
+    {"when": {"axis":  "z", "state": "floor_top_left"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_top_left_p1_cold", "y":  270}},
+    {"when": {"axis":  "z", "state": "floor_top_right"}, "apply": {"model": "portalmodexpanded:block/eroded/eroded_lunecast_floor_top_right_p1_cold"}}
+  ]
+}
