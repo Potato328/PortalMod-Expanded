@@ -6,7 +6,7 @@ lunecast and blackplate,Portal 1 style buttons and doors, as well as new variant
 As of Portal Mod: Expanded 1.2.0, or previously known as Expanded Arbor 1.2.0, Portal Mod Deco Blocks from the Portal Mod discord
 has been merged into Portal Mod: Expanded.
 
-Get PortalMod here:
+Get PortalMod here:  
 https://portalmod.net/   
 https://modrinth.com/mod/portalmod   
 
