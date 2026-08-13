@@ -1,0 +1,6 @@
+{
+  "parent": "portalmodexpanded:block/single_chamber_lights_side_on",
+  "textures": {
+    "tile": "portalmod:block/blackplate_top"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "portalmodexpanded:block/single_chamber_lights_side_on_mirror",
+  "textures": {
+    "lights": "portalmodexpanded:block/single_chamber_lights_off"
+  }
+}

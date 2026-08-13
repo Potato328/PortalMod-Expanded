@@ -1,0 +1,54 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"tile": "portalmod:block/blackplate_tiles",
+		"side": "portalmod:block/blackplate_panel_top",
+		"end": "portalmod:block/blackplate_tiles",
+		"glass": "portalmodexpanded:block/single_chamber_lights_glass_top",
+		"inside": "portalmod:block/chamber_lights_inside",
+		"particle": "portalmod:block/chamber_lights_on",
+		"lights": "portalmodexpanded:block/single_chamber_lights_on"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 2],
+			"to": [16, 8, 14],
+			"faces": {
+				"north": {"uv": [0, 16, 8, 0], "rotation": 270, "texture": "#lights"},
+				"south": {"uv": [8, 16, 16, 0], "rotation": 90, "texture": "#lights"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "rotation": 270, "texture": "#glass", "cullface": "north", "shade": false},
+				"east": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#end", "cullface": "east", "shade": false},
+				"south": {"uv": [8, 0, 16, 16], "rotation": 90, "texture": "#glass", "cullface": "south", "shade": false},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side", "cullface": "up", "shade": false},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side", "cullface": "down", "shade": false}
+			}
+		},
+		{
+			"from": [16, 7.99, 15.99],
+			"to": [0, 0, 0.01],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -8, 0]},
+			"faces": {
+				"west": {"uv": [0, 8, 16, 0], "rotation": 180, "texture": "#inside"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#inside"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#inside"}
+			}
+		},
+		{
+			"from": [0, 8, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 16], "cullface": "north", "rotation": 270, "texture": "#tile", "shade": false},
+				"east": {"uv": [8, 16, 16, 0], "cullface": "east", "rotation": 270, "texture": "#end", "shade": false},
+				"south": {"uv": [8, 16, 16, 0], "cullface": "south", "rotation": 270, "texture": "#tile", "shade": false},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "cullface": "up", "texture": "#side", "shade": false}
+			}
+		}
+	]
+}

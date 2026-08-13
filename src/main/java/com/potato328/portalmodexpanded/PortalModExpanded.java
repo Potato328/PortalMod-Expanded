@@ -93,6 +93,7 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
 
             RenderTypeLookup.setRenderLayer(ModBlocks.P1_LUNECAST_LIGHT.get(), RenderType.translucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SINGLE_CHAMBER_LIGHT_BLACKPLATE.get(), RenderType.translucent());
 
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TER::new);
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.SINGLE_AUTOPORTAL.get(), SingleAutoPortalTER::new);

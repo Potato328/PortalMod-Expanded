@@ -124,6 +124,9 @@ public class ModBlocks {
 
     //public static final RegistryObject<Block> ERODED_ANTLINE = registerBlock("eroded_antline", () -> new AntlineBlock(AbstractBlock.Properties.of(TESTING_ELEMENT, MaterialColor.COLOR_LIGHT_BLUE).lightLevel(i -> 2).noCollission().instabreak()), "eroded");
 
+    //Chamber Lights
+    public static final RegistryObject<Block> SINGLE_CHAMBER_LIGHT_BLACKPLATE = registerBlock("single_chamber_light_blackplate", () -> new SingleChamberLightBlock(AbstractBlock.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(i -> i.getValue(SingleChamberLightBlock.ACTIVE) ? 15 : 0)), "arbored");
+
     //Experimental
     public static final RegistryObject<Block> CAMERA_P2 = registerBlock("camera_p2", () -> new CameraP2Block(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
 

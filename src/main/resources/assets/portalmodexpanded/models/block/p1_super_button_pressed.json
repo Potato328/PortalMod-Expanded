@@ -23,7 +23,7 @@
 			"faces": {
 				"north": {"uv": [0, 12, 12, 15], "texture": "#case"},
 				"west": {"uv": [12, 0, 15, 12], "rotation": 90, "texture": "#case"},
-				"up": {"uv": [0, 0, 12, 12], "texture": "#case"},
+				"up": {"uv": [0, 0, 12, 12], "rotation": 180, "texture": "#case"},
 				"down": {"uv": [0, 0, 12, 12], "texture": "#bottom"}
 			}
 		},
