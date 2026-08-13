@@ -1,0 +1,23 @@
+{
+  "multipart": [
+    {"when": {"facing": "north", "corner": false, "ceiling": false, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "y": 180, "uvlock": true}},
+    {"when": {"facing": "north", "corner": false, "ceiling": true, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "x":  180, "uvlock": true}},
+    {"when": {"facing": "east", "corner": false, "ceiling": false, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "y": 270, "uvlock": true}},
+    {"when": {"facing": "east", "corner": false, "ceiling": true, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "x":  180, "y": 90, "uvlock": true}},
+    {"when": {"facing": "south", "corner": false, "ceiling": false, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "uvlock": true}},
+    {"when": {"facing": "south", "corner": false, "ceiling": true, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "x":  180, "y": 180, "uvlock": true}},
+    {"when": {"facing": "west", "corner": false, "ceiling": false, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "y": 90, "uvlock": true}},
+    {"when": {"facing": "west", "corner": false, "ceiling": true, "active": true}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "x":  180, "uvlock": true}},
+
+    {"when": {"facing": "north", "corner": false, "ceiling": false, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "y": 180, "uvlock": true}},
+    {"when": {"facing": "north", "corner": false, "ceiling": true, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "x":  180, "uvlock": true}},
+    {"when": {"facing": "east", "corner": false, "ceiling": false, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "y": 270, "uvlock": true}},
+    {"when": {"facing": "east", "corner": false, "ceiling": true, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "x":  180, "y": 90, "uvlock": true}},
+    {"when": {"facing": "south", "corner": false, "ceiling": false, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "uvlock": true}},
+    {"when": {"facing": "south", "corner": false, "ceiling": true, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ns", "x":  180, "y": 180, "uvlock": true}},
+    {"when": {"facing": "west", "corner": false, "ceiling": false, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "y": 90, "uvlock": true}},
+    {"when": {"facing": "west", "corner": false, "ceiling": true, "active": false}, "apply": {"model": "portalmodexpanded:block/eroded/p1_floorlight_ew", "x":  180, "uvlock": true}}
+    
+    
+  ]
+}

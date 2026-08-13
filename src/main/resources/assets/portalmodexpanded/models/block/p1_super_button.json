@@ -1,0 +1,85 @@
+{
+	"format_version": "1.21.11",
+	"textures": {
+		"particle": "#case"
+	},
+	"elements": [
+		{
+			"name": "button",
+			"from": [7.5, 3, 7.5],
+			"to": [16, 5, 16],
+			"faces": {
+				"north": {"uv": [0.5, 12, 9, 14], "texture": "#button"},
+				"west": {"uv": [0, 10, 8.5, 12], "texture": "#button"},
+				"up": {"uv": [0, 0.5, 8.5, 9], "rotation": 90, "texture": "#button"}
+			}
+		},
+		{
+			"name": "case",
+			"from": [4, 0, 4],
+			"to": [16, 3, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
+			"faces": {
+				"north": {"uv": [0, 12, 12, 15], "texture": "#case"},
+				"west": {"uv": [12, 0, 15, 12], "rotation": 90, "texture": "#case"},
+				"up": {"uv": [0, 0, 12, 12], "rotation": 180, "texture": "#case"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#bottom"}
+			}
+		},
+		{
+			"name": "arm",
+			"from": [13.5, 0, 2],
+			"to": [15.5, 2, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 2]},
+			"faces": {
+				"north": {"uv": [13, 2, 11, 4], "texture": "#button"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#button"},
+				"south": {"uv": [11, 0, 13, 2], "texture": "#button"},
+				"west": {"uv": [11, 4, 13, 6], "texture": "#button"},
+				"up": {"uv": [15, 2, 13, 4], "rotation": 180, "texture": "#button"},
+				"down": {"uv": [13, 0, 15, 2], "rotation": 180, "texture": "#button"}
+			}
+		},
+		{
+			"name": "arm",
+			"from": [14.5, 0, 0],
+			"to": [15.5, 2, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"north": {"uv": [15, 4, 14, 6], "texture": "#button"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#button"},
+				"west": {"uv": [11, 6, 13, 8], "texture": "#button"},
+				"up": {"uv": [15, 6, 14, 8], "rotation": 180, "texture": "#button"},
+				"down": {"uv": [13, 6, 14, 8], "rotation": 180, "texture": "#button"}
+			}
+		},
+		{
+			"name": "arm",
+			"from": [2, 0, 13.5],
+			"to": [4, 2, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 0]},
+			"faces": {
+				"north": {"uv": [11, 2, 13, 4], "texture": "#button"},
+				"east": {"uv": [11, 0, 13, 2], "texture": "#button"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#button"},
+				"west": {"uv": [11, 4, 13, 6], "texture": "#button"},
+				"up": {"uv": [13, 2, 15, 4], "rotation": 90, "texture": "#button"},
+				"down": {"uv": [13, 0, 15, 2], "rotation": 270, "texture": "#button"}
+			}
+		},
+		{
+			"name": "arm",
+			"from": [0, 0, 14.5],
+			"to": [2, 2, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 1]},
+			"faces": {
+				"north": {"uv": [11, 6, 13, 8], "texture": "#button"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#button"},
+				"west": {"uv": [13, 4, 14, 6], "texture": "#button"},
+				"up": {"uv": [14, 6, 15, 8], "rotation": 90, "texture": "#button"},
+				"down": {"uv": [13, 6, 14, 8], "rotation": 270, "texture": "#button"}
+			}
+		}
+	],
+	"loader": "portalmod:super_button"
+}

@@ -11,9 +11,10 @@ import net.minecraftforge.fml.common.Mod;
 public class ClientEventHandler {
     @SubscribeEvent
     public static void onTextureStitch(TextureStitchEvent.Pre event) {
-        // Target the block atlas where TER materials look for textures
+        //TER Texture Stitching
         if (event.getMap().location().equals(AtlasTexture.LOCATION_BLOCKS)) {
             event.addSprite(new ResourceLocation("portalmodexpanded", "entity/camerahead"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "entity/p1_autoportal"));
         }
     }
 }

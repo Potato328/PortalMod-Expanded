@@ -10,6 +10,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.portalmod.common.blocks.FrameBlock;
+import net.portalmod.common.sorted.antline.AntlineBlock;
 import net.portalmod.common.sorted.button.StandingButtonBlock;
 import net.portalmod.common.sorted.button.SuperButtonBlock;
 import net.portalmod.common.sorted.cubedropper.CubeDropperBlock;
@@ -22,6 +23,7 @@ import net.portalmod.common.sorted.platform.PlatformBlock;
 import java.util.function.Supplier;
 
 import static com.potato328.portalmodexpanded.PortalModExpanded.modid;
+import static net.portalmod.core.init.BlockInit.TESTING_ELEMENT;
 import static net.portalmod.core.init.BlockInit.stoneCopy;
 
 public class ModBlocks {
@@ -88,6 +90,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> ERODED_BLACKPLATE_P1 = registerBlock("eroded_blackplate_p1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
     public static final RegistryObject<Block> ERODED_BLACKPLATE_P1_SLAB = registerBlock("eroded_blackplate_p1_slab", () -> new SlabBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"eroded");
 
+    public static final RegistryObject<Block> P1_LUNECAST_LIGHT = registerBlock("p1_lunecast_light", () -> new LunecastChamberLightBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE).lightLevel(blockState -> blockState.getValue(LunecastChamberLightBlock.ACTIVE) ? 15 : 0).noOcclusion()),"eroded");
+
     //Arbored Platforms
     public static final RegistryObject<Block> ARBORED_BLACKPLATE_PLATFORM_1 = registerBlock("arbored_blackplate_platform_1", () -> new PlatformBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"arbored");
     public static final RegistryObject<Block> ARBORED_BLACKPLATE_PLATFORM_2 = registerBlock("arbored_blackplate_platform_2", () -> new PlatformBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)),"arbored");
@@ -115,10 +119,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> ERODED_FIZZLER_FIELD = registerBlockNoItem("eroded_fizzler_field", () -> new FizzlerFieldBlock(AbstractBlock.Properties.copy(Blocks.AIR).noOcclusion().strength(-1.0F,3600000.0F).noDrops().lightLevel(blockState -> 10)));
     public static final RegistryObject<Block> ERODED_CHAMBER_DOOR = registerBlock("eroded_chamber_door", () -> new ChamberDoorBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion()),"eroded");
 
+    public static final RegistryObject<Block> ERODED_SUPER_BUTTON = registerBlock("eroded_super_button", () -> new SuperButtonBlock(stoneCopy(MaterialColor.COLOR_RED).sound(SoundType.STONE).noOcclusion()),"eroded");
+    public static final RegistryObject<Block> P1_AUTO_PORTAL = registerBlock("p1_auto_portal", () -> new P1AutoPortalBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
+
+    //public static final RegistryObject<Block> ERODED_ANTLINE = registerBlock("eroded_antline", () -> new AntlineBlock(AbstractBlock.Properties.of(TESTING_ELEMENT, MaterialColor.COLOR_LIGHT_BLUE).lightLevel(i -> 2).noCollission().instabreak()), "eroded");
+
     //Experimental
     public static final RegistryObject<Block> CAMERA_P2 = registerBlock("camera_p2", () -> new CameraP2Block(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
 
-    public static final RegistryObject<Block> SINGLE_AUTO_PORTAL = registerBlock("single_auto_portal", () -> new SingleAutoPortal(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
+    public static final RegistryObject<Block> SINGLE_AUTO_PORTAL = registerBlock("single_auto_portal", () -> new SingleAutoPortalBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "arbored");
 
     //Registers blocks
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, String tab) {

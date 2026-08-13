@@ -7,6 +7,7 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.portalmod.common.sorted.autoportal.AutoPortalTileEntity;
 import net.portalmod.core.init.TileEntityTypeInit;
 
 import java.util.Set;
@@ -21,6 +22,8 @@ public class ModTileEntities {
 
     public static final RegistryObject<TileEntityType<SingleAutoPortalTileEntity>> SINGLE_AUTOPORTAL = TILE_ENTITY.register("single_autoportal", () -> TileEntityType.Builder.of(SingleAutoPortalTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getSingleAutoPortalBlocks)).build(null));
 
+    public static final RegistryObject<TileEntityType<P1AutoPortalTileEntity>> P1_AUTOPORTAL = TILE_ENTITY.register("p1_autoportal", () -> TileEntityType.Builder.of(P1AutoPortalTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getAutoPortalBlocks)).build(null));
+
 
     public static Set<Block> getErodedFizzlerBlocks(Set<Block> blocks) {
         blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
@@ -31,6 +34,10 @@ public class ModTileEntities {
         return blocks;
     }
 
+    public static Set<Block> getAutoPortalBlocks(Set<Block> blocks) {
+        blocks.add(ModBlocks.P1_AUTO_PORTAL.get());
+        return blocks;
+    }
     public static Set<Block> getSingleAutoPortalBlocks(Set<Block> blocks) {
         blocks.add(ModBlocks.SINGLE_AUTO_PORTAL.get());
         return blocks;

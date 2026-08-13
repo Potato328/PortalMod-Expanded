@@ -2,6 +2,7 @@ package com.potato328.portalmodexpanded;
 
 import com.potato328.portalmodexpanded.block.ModBlocks;
 import com.potato328.portalmodexpanded.client.renderer.CameraP2TER;
+import com.potato328.portalmodexpanded.client.renderer.P1AutoPortalTER;
 import com.potato328.portalmodexpanded.client.renderer.SingleAutoPortalTER;
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
 import com.potato328.portalmodexpanded.tileentity.SingleAutoPortalTileEntity;
@@ -91,8 +92,11 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_EMITTER.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
 
+            RenderTypeLookup.setRenderLayer(ModBlocks.P1_LUNECAST_LIGHT.get(), RenderType.translucent());
+
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TER::new);
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.SINGLE_AUTOPORTAL.get(), SingleAutoPortalTER::new);
+            ClientRegistry.bindTileEntityRenderer(ModTileEntities.P1_AUTOPORTAL.get(), P1AutoPortalTER::new);
 
 
         });

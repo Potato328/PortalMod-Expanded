@@ -1,6 +1,6 @@
 package com.potato328.portalmodexpanded.tileentity;
 
-import com.potato328.portalmodexpanded.block.SingleAutoPortal;
+import com.potato328.portalmodexpanded.block.SingleAutoPortalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Tuple;
@@ -39,17 +39,17 @@ public class SingleAutoPortalTileEntity extends AutoPortalTileEntity {
             return;
 
         BlockState blockState = this.getBlockState();
-        if(!(blockState.getBlock() instanceof SingleAutoPortal))
+        if(!(blockState.getBlock() instanceof SingleAutoPortalBlock))
             return;
 
         this.checkLastOpened();
 
         IndicatorInfo indicatorInfo = this.checkIndicators(blockState, this.level, this.getBlockPos());
-        boolean isPowered = blockState.getValue(SingleAutoPortal.POWERED);
+        boolean isPowered = blockState.getValue(SingleAutoPortalBlock.POWERED);
 
         if(indicatorInfo.hasIndicators) {
             if(isPowered != indicatorInfo.allIndicatorsActivated) {
-                ((SingleAutoPortal)blockState.getBlock()).setAntlinePowered(indicatorInfo.allIndicatorsActivated, blockState, this.level, this.getBlockPos());
+                ((SingleAutoPortalBlock)blockState.getBlock()).setAntlinePowered(indicatorInfo.allIndicatorsActivated, blockState, this.level, this.getBlockPos());
 
                 if(indicatorInfo.allIndicatorsActivated) {
                     openPortal(blockState);
@@ -63,9 +63,9 @@ public class SingleAutoPortalTileEntity extends AutoPortalTileEntity {
         powerChangeDetector.shift();
     }
     private void openPortal(BlockState blockState) {
-        Direction facing = this.getBlockState().getValue(SingleAutoPortal.FACING);
-        Direction direction = this.getBlockState().getValue(SingleAutoPortal.DIRECTION);
-        Tuple<Direction, Direction> directions = ((SingleAutoPortal) blockState.getBlock()).placementDirectionsFromFacingAndDirection(facing, direction);
+        Direction facing = this.getBlockState().getValue(SingleAutoPortalBlock.FACING);
+        Direction direction = this.getBlockState().getValue(SingleAutoPortalBlock.DIRECTION);
+        Tuple<Direction, Direction> directions = ((SingleAutoPortalBlock) blockState.getBlock()).placementDirectionsFromFacingAndDirection(facing, direction);
         Direction left = directions.getA();
         Direction up = directions.getB();
 
@@ -188,9 +188,9 @@ public class SingleAutoPortalTileEntity extends AutoPortalTileEntity {
 
     @Override
     public List<BlockPos> getIndicatorPositions(BlockState state, World world, BlockPos pos) {
-        Direction up = ((SingleAutoPortal) state.getBlock()).getUpperDirection(state);
+        Direction up = ((SingleAutoPortalBlock) state.getBlock()).getUpperDirection(state);
         Direction down = up.getOpposite();
-        Direction backwards = state.getValue(SingleAutoPortal.FACING).getOpposite();
+        Direction backwards = state.getValue(SingleAutoPortalBlock.FACING).getOpposite();
         Vector3i perpendicular = up.getNormal().cross(backwards.getNormal());
         Direction side = Direction.fromNormal(perpendicular.getX(), perpendicular.getY(), perpendicular.getZ());
 

@@ -32,5 +32,6 @@ public class TileEntityTypeInitMixin {
     @Inject(method="getAutoPortalBlocks", at=@At("HEAD"), remap = false)
     private static void addAutoPortalBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
         blocks.add(ModBlocks.SINGLE_AUTO_PORTAL.get());
+        blocks.add(ModBlocks.P1_AUTO_PORTAL.get());
     }
 }

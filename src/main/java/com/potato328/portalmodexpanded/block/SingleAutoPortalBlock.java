@@ -40,13 +40,13 @@ import javax.annotation.Nullable;
 import java.util.Optional;
 import java.util.UUID;
 
-public class SingleAutoPortal extends DoubleBlock {
+public class SingleAutoPortalBlock extends DoubleBlock {
 
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
     public static final DirectionProperty DIRECTION = DirectionProperty.create("direction", Direction.Plane.HORIZONTAL);
 
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-    public SingleAutoPortal(Properties properties) {
+    public SingleAutoPortalBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
@@ -78,7 +78,7 @@ public class SingleAutoPortal extends DoubleBlock {
             return ActionResultType.CONSUME;
 
         Block block = state.getBlock();
-        if(!(block instanceof SingleAutoPortal))
+        if(!(block instanceof SingleAutoPortalBlock))
             return ActionResultType.PASS;
 
         BlockPos tePos = getMainPosition(state, pos);
@@ -209,7 +209,7 @@ public class SingleAutoPortal extends DoubleBlock {
         Direction facing = state.getValue(FACING);
 
         boolean isPowered = getAllPositions(state, pos).stream()
-                .filter(blockPos -> level.getBlockState(blockPos).getBlock() instanceof SingleAutoPortal)
+                .filter(blockPos -> level.getBlockState(blockPos).getBlock() instanceof SingleAutoPortalBlock)
                 .anyMatch(checkingPos -> level.hasSignal(checkingPos.relative(facing.getOpposite()), facing));
 
         TileEntity te = level.getBlockEntity(getMainPosition(state, pos));

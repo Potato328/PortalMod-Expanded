@@ -22,8 +22,8 @@ import net.portalmod.common.sorted.autoportal.AutoPortalModel;
 
 import java.util.Optional;
 
-import static com.potato328.portalmodexpanded.block.SingleAutoPortal.DIRECTION;
-import static com.potato328.portalmodexpanded.block.SingleAutoPortal.FACING;
+import static com.potato328.portalmodexpanded.block.SingleAutoPortalBlock.DIRECTION;
+import static com.potato328.portalmodexpanded.block.SingleAutoPortalBlock.FACING;
 
 
 public class SingleAutoPortalTER extends TileEntityRenderer<SingleAutoPortalTileEntity> {

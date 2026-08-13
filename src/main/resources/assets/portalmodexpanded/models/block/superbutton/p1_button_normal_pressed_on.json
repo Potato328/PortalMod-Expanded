@@ -1,0 +1,8 @@
+{
+  "parent": "portalmodexpanded:block/p1_super_button_pressed",
+  "textures": {
+    "case":     "portalmodexpanded:block/superbutton/eroded_super_button_corner",
+    "bottom":   "portalmod:block/super_button_bottom_1",
+    "button":   "portalmodexpanded:block/superbutton/eroded_super_button_top_normal"
+  }
+}

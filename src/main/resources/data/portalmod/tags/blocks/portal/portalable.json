@@ -2,7 +2,10 @@
   "replace": false,
   "values": [
     "portalmodexpanded:eroded_lunecast_p1",
+    "portalmodexpanded:eroded_lunecast_p1_cold",
+    "portalmodexpanded:eroded_lunecast_p1_warm",
     "portalmodexpanded:dirty_lunecast",
-    "portalmodexpanded:dirty_lunecast_2"
+    "portalmodexpanded:dirty_lunecast_2",
+    "portalmodexpanded:p1_lunecast_light"
   ]
 }
