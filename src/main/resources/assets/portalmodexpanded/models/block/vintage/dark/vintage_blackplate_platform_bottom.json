@@ -1,0 +1,8 @@
+{
+  "parent": "portalmod:block/template_platform_bottom",
+  "textures": {
+    "top": "portalmodexpanded:block/vintage/dark/vintage_blackplate_top",
+    "side": "portalmodexpanded:block/vintage/dark/vintage_blackplate_platform_side",
+    "bottom": "portalmod:block/rusty_platform_bottom"
+  }
+}

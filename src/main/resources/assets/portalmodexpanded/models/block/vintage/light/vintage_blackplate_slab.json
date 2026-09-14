@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "side": "portalmodexpanded:block/vintage/light/vintage_blackplate_tiles",
+    "bottom": "portalmodexpanded:block/vintage/light/vintage_blackplate_slab_bottom",
+    "top": "portalmodexpanded:block/vintage/light/vintage_blackplate_slab_top"
+  }
+}

@@ -1,5 +1,7 @@
 {
 	"format_version": "1.21.11",
+	"parent": "block/block",
+	"ambientocclusion": false,
 	"textures": {
 		"tile": "portalmod:block/blackplate_tiles",
 		"side": "portalmod:block/blackplate_panel_bottom",
@@ -13,6 +15,7 @@
 		{
 			"from": [0, 0, 2],
 			"to": [8, 16, 14],
+			"shade":  false,
 			"faces": {
 				"north": {"uv": [8, 0, 16, 16], "texture": "#lights"},
 				"south": {"uv": [0, 0, 8, 16], "texture": "#lights"}
@@ -21,6 +24,7 @@
 		{
 			"from": [0, 0, 0],
 			"to": [8, 16, 16],
+			"shade":  false,
 			"faces": {
 				"north": {"uv": [8, 0, 16, 16], "texture": "#glass", "cullface": "north"},
 				"south": {"uv": [0, 0, 8, 16], "texture": "#glass", "cullface": "south"},
@@ -31,6 +35,7 @@
 		{
 			"from": [8, 16, 15.99],
 			"to": [0, 0, 0.01],
+			"shade":  false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, 0]},
 			"faces": {
 				"east": {"uv": [0, 0, 16, 16], "texture": "#inside"},
@@ -41,6 +46,7 @@
 		{
 			"from": [8, 0, 0],
 			"to": [16, 16, 16],
+			"shade":  false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 0]},
 			"faces": {
 				"north": {"uv": [0, 0, 8, 16], "cullface": "north", "texture": "#tile"},

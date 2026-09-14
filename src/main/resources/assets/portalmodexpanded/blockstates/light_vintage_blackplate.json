@@ -1,7 +1,23 @@
 {
-  "variants": {
-    "": {
-      "model": "portalmodexpanded:block/dirty/light_vintage_blackplate"
-    }
-  }
+  "multipart": [
+    {"when":  {"state": "single"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate"}},
+
+    {"when":  {"state": "top"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_top"}},
+    {"when":  {"state": "bottom"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_bottom"}},
+
+    {"when": {"axis":  "z", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_bottom"}},
+    {"when": {"axis":  "z", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_bottom", "y":  180}},
+    {"when": {"axis":  "z", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_top"}},
+    {"when": {"axis":  "z", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_top", "y": 180}},
+
+    {"when": {"axis":  "x", "state":  "bottom_left"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_bottom", "y": 90, "uvlock": true}},
+    {"when": {"axis":  "x", "state":  "bottom_right"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_bottom", "y": 270, "uvlock": true}},
+    {"when": {"axis":  "x", "state":  "top_left"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_top", "y": 90, "uvlock": true}},
+    {"when": {"axis":  "x", "state":  "top_right"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_top", "y": 270, "uvlock": true}},
+
+    {"when": {"axis":  "x|z", "state":  "floor_bottom_left"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_bottom_left_floor", "y":  180, "uvlock": true}},
+    {"when": {"axis":  "x|z", "state":  "floor_bottom_right"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_bottom_right_floor", "y":  90, "uvlock": true}},
+    {"when": {"axis":  "x|z", "state":  "floor_top_left"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_top_left_floor", "y":  270, "uvlock": true}},
+    {"when": {"axis":  "x|z", "state":  "floor_top_right"}, "apply": {"model": "portalmodexpanded:block/vintage/light/vintage_blackplate_corner_top_right_floor", "uvlock": true}}
+  ]
 }

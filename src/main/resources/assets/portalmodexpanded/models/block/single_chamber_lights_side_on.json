@@ -1,4 +1,5 @@
 {
+	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
 		"tile": "portalmod:block/blackplate_tiles",
@@ -13,6 +14,7 @@
 		{
 			"from": [0, 8, 2],
 			"to": [16, 16, 14],
+			"shade":  false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
 			"faces": {
 				"north": {"uv": [8, 16, 16, 0], "rotation": 270, "texture": "#lights"},
@@ -22,18 +24,20 @@
 		{
 			"from": [0, 8, 0],
 			"to": [16, 16, 16],
+			"shade":  false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
 			"faces": {
-				"north": {"uv": [8, 0, 16, 16], "rotation": 270, "texture": "#glass", "cullface": "north", "shade": false},
-				"east": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#end", "cullface": "east", "shade": false},
-				"south": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#glass", "cullface": "south", "shade": false},
-				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side", "cullface": "up", "shade": false},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side", "cullface": "down", "shade": false}
+				"north": {"uv": [8, 0, 16, 16], "rotation": 270, "texture": "#glass", "cullface": "north"},
+				"east": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#end", "cullface": "east"},
+				"south": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#glass", "cullface": "south"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#side", "cullface": "down"}
 			}
 		},
 		{
 			"from": [16, 15.99, 15.99],
 			"to": [0, 8, 0.01],
+			"shade":  false,
 			"faces": {
 				"west": {"uv": [0, 8, 16, 0], "rotation": 180, "texture": "#inside"},
 				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#inside"},
@@ -43,11 +47,12 @@
 		{
 			"from": [0, 0, 0],
 			"to": [16, 8, 16],
+			"shade":  false,
 			"faces": {
-				"north": {"uv": [0, 0, 8, 16], "rotation": 270, "cullface": "north", "texture": "#tile", "shade": false},
-				"east": {"uv": [0, 16, 8, 0], "rotation": 270, "cullface": "east", "texture": "#end", "shade": false},
-				"south": {"uv": [0, 16, 8, 0], "rotation": 270, "cullface": "south", "texture": "#tile", "shade": false},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "cullface": "down", "texture": "#side", "shade": false}
+				"north": {"uv": [0, 0, 8, 16], "rotation": 270, "cullface": "north", "texture": "#tile"},
+				"east": {"uv": [0, 16, 8, 0], "rotation": 270, "cullface": "east", "texture": "#end"},
+				"south": {"uv": [0, 16, 8, 0], "rotation": 270, "cullface": "south", "texture": "#tile"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "cullface": "down", "texture": "#side"}
 			}
 		}
 	]

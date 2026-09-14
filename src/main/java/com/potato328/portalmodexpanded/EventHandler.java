@@ -137,11 +137,11 @@ public class EventHandler {
                     Block block = ModBlocks.RUSTY_BLOCK.get();
                     mapping.remap(block);
                 }
-                if (mapping.key.getPath().equals("single_glue_tile")) {
-                    Block block = ModBlocks.FRAME_TILES.get();
-                    mapping.remap(block);
-                }
-                if (mapping.key.getPath().equals("double_glue_tile")) {
+                //if (mapping.key.getPath().equals("single_glue_tile")) {
+                //    Block block = ModBlocks.FRAME_TILES.get();
+                //    mapping.remap(block);
+                //}
+                /*if (mapping.key.getPath().equals("double_glue_tile")) {
                     Block block = ModBlocks.FRAME_TILES_1.get();
                     mapping.remap(block);
                 }
@@ -216,7 +216,7 @@ public class EventHandler {
                 if (mapping.key.getPath().equals("floor_dirty_glue_tiles_2")) {
                     Block block = ModBlocks.TILE_DEBRIS.get();
                     mapping.remap(block);
-                }
+                }*/
                 if (mapping.key.getPath().equals("debris_1")) {
                     Block block = ModBlocks.DEBRIS.get();
                     mapping.remap(block);

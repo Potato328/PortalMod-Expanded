@@ -1,0 +1,6 @@
+{
+	"parent": "portalmodexpanded:block/dirty/tile4_half",
+	"textures": {
+		"tile": "portalmodexpanded:block/dirty/tile5"
+	}
+}

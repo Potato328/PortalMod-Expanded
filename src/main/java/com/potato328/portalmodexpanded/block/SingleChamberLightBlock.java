@@ -68,7 +68,7 @@ public class SingleChamberLightBlock extends ChamberLightsBlock {
         BlockState blockstate = this.defaultBlockState().setValue(HALF, willBeHorizontal ? horizontalTopHalf.get() : verticalTopHalf.get()).setValue(ACTIVE, new Random().nextBoolean());
 
         if (willBeHorizontal) {
-            if(clickedFace == Direction.UP && context.getNearestLookingDirection().getAxis() == Direction.Axis.Y) {
+            if(context.getNearestLookingDirection().getAxis() == Direction.Axis.Y) {
                 if(context.getHorizontalDirection().getAxis() == Direction.Axis.X) {
                     if (x > 0.5) {
                         return blockstate.setValue(AXIS, axis).setValue(ROTATED, true);

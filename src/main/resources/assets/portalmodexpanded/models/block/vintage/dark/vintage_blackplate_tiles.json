@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "side": "portalmodexpanded:block/vintage/dark/vintage_blackplate_tiles",
+    "top": "portalmodexpanded:block/vintage/dark/vintage_blackplate_top",
+    "bottom": "portalmodexpanded:block/vintage/dark/vintage_blackplate_tiles"
+  }
+}

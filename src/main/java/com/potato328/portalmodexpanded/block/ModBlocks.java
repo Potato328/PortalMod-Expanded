@@ -62,19 +62,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> DIRTY_BLACKPLATE_1 = registerBlock("dirty_blackplate_1", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
     public static final RegistryObject<Block> DIRTY_BLACKPLATE_2 = registerBlock("dirty_blackplate_2", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
     public static final RegistryObject<Block> DIRTY_BLACKPLATE_3 = registerBlock("dirty_blackplate_3", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
-    public static final RegistryObject<Block> LIGHT_VINTAGE_BLACKPLATE = registerBlock("light_vintage_blackplate", () -> new Block(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
-    public static final RegistryObject<Block> DARK_VINTAGE_BLACKPLATE = registerBlock("dark_vintage_blackplate", () -> new Block(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
+    public static final RegistryObject<Block> LIGHT_VINTAGE_BLACKPLATE = registerBlock("light_vintage_blackplate", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
+    public static final RegistryObject<Block> DARK_VINTAGE_BLACKPLATE = registerBlock("dark_vintage_blackplate", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.BLACK_CONCRETE)), "deco");
 
     public static final RegistryObject<Block> DIRTY_LUNECAST = registerBlock("dirty_lunecast", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)), "deco");
     public static final RegistryObject<Block> DIRTY_LUNECAST_2 = registerBlock("dirty_lunecast_2", () -> new PanelBlock(AbstractBlock.Properties.copy(Blocks.WHITE_CONCRETE)), "deco");
 
     public static final RegistryObject<Block> RUSTY_BLOCK = registerBlock("rusty_block", () -> new Block(AbstractBlock.Properties.copy(Blocks.STONE)), "deco");
 
-    public static final RegistryObject<Block> FRAME_TILES = registerBlock("frame_tiles", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
-    public static final RegistryObject<Block> FRAME_TILES_1 = registerBlock("frame_tiles_1", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
-    public static final RegistryObject<Block> FRAME_TILES_2 = registerBlock("frame_tiles_2", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
-    public static final RegistryObject<Block> FRAME_TILES_3 = registerBlock("frame_tiles_3", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
-    public static final RegistryObject<Block> FRAME_TILES_4 = registerBlock("frame_tiles_4", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
+    public static final RegistryObject<Block> FRAME_TILES = registerBlock("frame_tiles", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), false), "deco");
+    public static final RegistryObject<Block> RUSTY_FRAME_TILES = registerBlock("rusty_frame_tiles", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), false), "deco");
+    //public static final RegistryObject<Block> FRAME_TILES_1 = registerBlock("frame_tiles_1", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
+    //public static final RegistryObject<Block> FRAME_TILES_2 = registerBlock("frame_tiles_2", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
+    //public static final RegistryObject<Block> FRAME_TILES_3 = registerBlock("frame_tiles_3", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
+    //public static final RegistryObject<Block> FRAME_TILES_4 = registerBlock("frame_tiles_4", () -> new TileFrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
     public static final RegistryObject<Block> PANEL_TILE = registerBlock("panel_tile", () -> new FrameBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion(), true), "deco");
 
     public static final RegistryObject<Block> DEBRIS = registerBlock("debris", () -> new DebrisBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "deco");
