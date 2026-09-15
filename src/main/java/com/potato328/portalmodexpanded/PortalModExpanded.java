@@ -69,8 +69,8 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.DIRTY_BLACKPLATE_2.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.DIRTY_BLACKPLATE_3.get(), RenderType.cutout());
 
-            //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES.get(), RenderType.cutout());
-            //RenderTypeLookup.setRenderLayer(ModBlocks.RUSTY_FRAME_TILES.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.RUSTY_FRAME_TILES.get(), RenderType.cutout());
             //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_1.get(), RenderType.cutout());
             //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_2.get(), RenderType.cutout());
             //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_3.get(), RenderType.cutout());
