@@ -3,6 +3,6 @@
   "textures": {
     "case":     "portalmodexpanded:block/superbutton/eroded_super_button_corner_2",
     "bottom":   "portalmod:block/super_button_bottom_1",
-    "button":   "portalmodexpanded:block/superbutton/asb_top_persistent"
+    "button":   "portalmodexpanded:block/superbutton/eroded_super_button_top_persistent"
   }
 }

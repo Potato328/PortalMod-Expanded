@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "side": "portalmodexpanded:block/vintage/light/vintage_blackplate",
-    "top": "portalmod:block/vintage/light/vintage_blackplate_top",
-    "bottom": "portalmod:block/vintage/light/vintage_blackplate_bottom"
+    "top": "portalmodexpanded:block/vintage/light/vintage_blackplate_top",
+    "bottom": "portalmodexpanded:block/vintage/light/vintage_blackplate_bottom"
   }
 }

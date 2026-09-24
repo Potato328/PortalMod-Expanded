@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "portalmodexpanded:item/chamber_door_p1"
+  }
+}

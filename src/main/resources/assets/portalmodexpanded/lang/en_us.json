@@ -37,6 +37,19 @@
   "block.portalmodexpanded.arbored_cube_dropper": "Arbored Cube Dropper",
   "block.portalmodexpanded.arbored_chamber_door_p1": "Arbored Portal 1 Chamber Door",
 
+  "block.portalmodexpanded.eroded_lunecast_p1": "Portal 1 Lunecast",
+  "block.portalmodexpanded.eroded_lunecast_p1_cold": "Portal 1 Lunecast Cold",
+  "block.portalmodexpanded.eroded_lunecast_p1_warm": "Portal 1 Lunecast Warm",
+  "block.portalmodexpanded.eroded_blackplate_p1": "Portal 1 Blackplate",
+  "block.portalmodexpanded.eroded_blackplate_p1_slab": "Portal 1 Blackplate Slab",
+  "block.portalmodexpanded.eroded_chamber_door": "Portal 1 Chamber Door",
+  "block.portalmodexpanded.eroded_super_button": "Portal 1 Super Button",
+  "block.portalmodexpanded.p1_auto_portal": "Portal 1 Auto Portal",
+  "block.portalmodexpanded.p1_single_auto_portal": "Portal 1 Single Auto Portal",
+
+  "block.portalmodexpanded.single_chamber_light_blackplate": "Single Chamber Light",
+  "block.portalmodexpanded.single_auto_portal": "Single Auto Portal",
+
 
 
   "block.portalmodexpanded.dirty_blackplate": "Dirty Blackplate",

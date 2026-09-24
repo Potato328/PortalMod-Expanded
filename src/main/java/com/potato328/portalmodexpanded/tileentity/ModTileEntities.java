@@ -23,14 +23,15 @@ public class ModTileEntities {
     public static final RegistryObject<TileEntityType<SingleAutoPortalTileEntity>> SINGLE_AUTOPORTAL = TILE_ENTITY.register("single_autoportal", () -> TileEntityType.Builder.of(SingleAutoPortalTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getSingleAutoPortalBlocks)).build(null));
 
     public static final RegistryObject<TileEntityType<P1AutoPortalTileEntity>> P1_AUTOPORTAL = TILE_ENTITY.register("p1_autoportal", () -> TileEntityType.Builder.of(P1AutoPortalTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getAutoPortalBlocks)).build(null));
+    public static final RegistryObject<TileEntityType<FrameTileTileEntity>> FRAME_TILES = TILE_ENTITY.register("frame_tiles", () -> TileEntityType.Builder.of(FrameTileTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getFrameTileBlocks)).build(null));
 
 
     public static Set<Block> getErodedFizzlerBlocks(Set<Block> blocks) {
-        blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
+        //blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
         return blocks;
     }
     public static Set<Block> getCameraP2Blocks(Set<Block> blocks) {
-        blocks.add(ModBlocks.CAMERA_P2.get());
+        //blocks.add(ModBlocks.CAMERA_P2.get());
         return blocks;
     }
 
@@ -40,6 +41,11 @@ public class ModTileEntities {
     }
     public static Set<Block> getSingleAutoPortalBlocks(Set<Block> blocks) {
         blocks.add(ModBlocks.SINGLE_AUTO_PORTAL.get());
+        return blocks;
+    }
+    public static Set<Block> getFrameTileBlocks(Set<Block> blocks) {
+        //blocks.add(ModBlocks.FRAME_TILES.get());
+        //blocks.add(ModBlocks.RUSTY_FRAME_TILES.get());
         return blocks;
     }
 

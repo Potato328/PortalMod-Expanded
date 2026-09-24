@@ -1,0 +1,9 @@
+{
+  "parent": "portalmodexpanded:block/dirty/tiles",
+  "textures": {
+    "tile1": "portalmodexpanded:block/dirty/tile2",
+    "tile2": "portalmodexpanded:block/dirty/tile2",
+    "tile3": "portalmodexpanded:block/dirty/tile2",
+    "tile4": "portalmodexpanded:block/dirty/tile2"
+  }
+}

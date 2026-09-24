@@ -1,0 +1,7 @@
+{
+	"parent": "portalmodexpanded:block/dirty/double_tile",
+	"textures": {
+		"tile": "portalmodexpanded:block/dirty/tile5",
+		"particle": "portalmodexpanded:block/dirty/tile5"
+	}
+}

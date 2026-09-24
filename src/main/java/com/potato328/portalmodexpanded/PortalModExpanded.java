@@ -70,11 +70,11 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.DIRTY_BLACKPLATE_3.get(), RenderType.cutout());
 
             RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES.get(), RenderType.cutout());
-            RenderTypeLookup.setRenderLayer(ModBlocks.RUSTY_FRAME_TILES.get(), RenderType.cutout());
-            //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_1.get(), RenderType.cutout());
-            //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_2.get(), RenderType.cutout());
-            //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_3.get(), RenderType.cutout());
-            //RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_4.get(), RenderType.cutout());
+            //RenderTypeLookup.setRenderLayer(ModBlocks.RUSTY_FRAME_TILES.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_1.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_2.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_3.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.FRAME_TILES_4.get(), RenderType.cutout());
 
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_BLACKPLATE_PLATFORM_1.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_BLACKPLATE_PLATFORM_2.get(), RenderType.cutout());
@@ -90,11 +90,12 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_SUPER_BUTTON2.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_CUBE_DROPPER.get(), RenderType.translucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.ARBORED_STANDING_BUTTON.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_SUPER_BUTTON.get(), RenderType.cutout());
 
-            RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_EMITTER.get(), RenderType.cutout());
+            //RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_EMITTER.get(), RenderType.cutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
 
-            RenderTypeLookup.setRenderLayer(ModBlocks.P1_LUNECAST_LIGHT.get(), RenderType.translucent());
+            //RenderTypeLookup.setRenderLayer(ModBlocks.P1_LUNECAST_LIGHT.get(), RenderType.translucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.SINGLE_CHAMBER_LIGHT_BLACKPLATE.get(), RenderType.translucent());
 
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TER::new);
