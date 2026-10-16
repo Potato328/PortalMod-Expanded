@@ -1,0 +1,7 @@
+{
+  "parent": "portalmod:block/pane_no_ao",
+  "textures": {
+    "left":  "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom",
+    "right": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom"
+  }
+}

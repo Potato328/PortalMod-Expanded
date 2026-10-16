@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "loader": "portalmodexpanded:vintage_antline",
+  "textures": {
+    "particle": "portalmodexpanded:antline/vintage/inactive_dot"
+  }
+}

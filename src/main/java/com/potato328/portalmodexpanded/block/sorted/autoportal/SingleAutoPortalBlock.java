@@ -1,7 +1,7 @@
-package com.potato328.portalmodexpanded.block;
+package com.potato328.portalmodexpanded.block.sorted.autoportal;
 
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
-import com.potato328.portalmodexpanded.tileentity.SingleAutoPortalTileEntity;
+import com.potato328.portalmodexpanded.tileentity.sorted.autoportal.SingleAutoPortalTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
@@ -250,7 +250,7 @@ public class SingleAutoPortalBlock extends DoubleBlock {
             return Direction.EAST;
         }
 
-            return Direction.UP;
+        return Direction.UP;
 
 
 

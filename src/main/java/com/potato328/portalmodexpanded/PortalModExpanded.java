@@ -4,8 +4,9 @@ import com.potato328.portalmodexpanded.block.ModBlocks;
 import com.potato328.portalmodexpanded.client.renderer.CameraP2TER;
 import com.potato328.portalmodexpanded.client.renderer.P1AutoPortalTER;
 import com.potato328.portalmodexpanded.client.renderer.SingleAutoPortalTER;
+import com.potato328.portalmodexpanded.client.renderer.VintageCubeDropperTER;
+import com.potato328.portalmodexpanded.item.ModItems;
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
-import com.potato328.portalmodexpanded.tileentity.SingleAutoPortalTileEntity;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,12 +28,11 @@ public class PortalModExpanded {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         MinecraftForge.EVENT_BUS.register(this);
         eventBus.register(new ColorHandler());
         ModBlocks.register(eventBus);
+        ModItems.register(eventBus);
         MinecraftForge.EVENT_BUS.register(new EventHandler());
         MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
         ModTileEntities.TILE_ENTITY.register(eventBus);
@@ -93,7 +93,12 @@ public class PortalModExpanded {
             RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_SUPER_BUTTON.get(), RenderType.cutout());
 
             //RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_EMITTER.get(), RenderType.cutout());
-            RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
+            //RenderTypeLookup.setRenderLayer(ModBlocks.ERODED_FIZZLER_FIELD.get(), RenderType.cutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.VINTAGE_FIZZLER_FIELD.get(), RenderType.translucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VINTAGE_FIZZLER_EMITTER.get(), RenderType.translucent());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VINTAGE_ANTLINE.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VINTAGE_SUPER_BUTTON.get(), RenderType.cutout());
 
             //RenderTypeLookup.setRenderLayer(ModBlocks.P1_LUNECAST_LIGHT.get(), RenderType.translucent());
             RenderTypeLookup.setRenderLayer(ModBlocks.SINGLE_CHAMBER_LIGHT_BLACKPLATE.get(), RenderType.translucent());
@@ -101,14 +106,9 @@ public class PortalModExpanded {
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TER::new);
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.SINGLE_AUTOPORTAL.get(), SingleAutoPortalTER::new);
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.P1_AUTOPORTAL.get(), P1AutoPortalTER::new);
+            ClientRegistry.bindTileEntityRenderer(ModTileEntities.VINTAGE_CUBE_DROPPER.get(), VintageCubeDropperTER::new);
 
 
         });
-    }
-    private void enqueueIMC(final InterModEnqueueEvent event) {
-
-    }
-    private void processIMC(final InterModProcessEvent event) {
-
     }
 }

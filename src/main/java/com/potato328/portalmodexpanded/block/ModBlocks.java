@@ -1,6 +1,15 @@
 package com.potato328.portalmodexpanded.block;
 
 import com.potato328.portalmodexpanded.ModInventoryTab;
+import com.potato328.portalmodexpanded.block.sorted.antline.VintageAntlineBlock;
+import com.potato328.portalmodexpanded.block.sorted.autoportal.P1AutoPortalBlock;
+import com.potato328.portalmodexpanded.block.sorted.autoportal.SingleAutoPortalBlock;
+import com.potato328.portalmodexpanded.block.sorted.button.VintageStandingButton;
+import com.potato328.portalmodexpanded.block.sorted.button.VintageSuperButton;
+import com.potato328.portalmodexpanded.block.sorted.chamberdoor.VintageChamberDoor;
+import com.potato328.portalmodexpanded.block.sorted.chamberlight.SingleChamberLightBlock;
+import com.potato328.portalmodexpanded.block.sorted.cubedropper.VintageCubeDropperBlock;
+import com.potato328.portalmodexpanded.block.sorted.fizzler.VintageFizzlerEmitterBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
@@ -10,6 +19,8 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.portalmod.common.blocks.FrameBlock;
+import net.portalmod.common.sorted.antline.AntlineBlock;
+import net.portalmod.common.sorted.antline.indicator.AntlineIndicatorBlock;
 import net.portalmod.common.sorted.button.StandingButtonBlock;
 import net.portalmod.common.sorted.button.SuperButtonBlock;
 import net.portalmod.common.sorted.cubedropper.CubeDropperBlock;
@@ -21,6 +32,7 @@ import net.portalmod.common.sorted.platform.PlatformBlock;
 import java.util.function.Supplier;
 
 import static com.potato328.portalmodexpanded.PortalModExpanded.modid;
+import static net.portalmod.core.init.BlockInit.TESTING_ELEMENT;
 import static net.portalmod.core.init.BlockInit.stoneCopy;
 
 public class ModBlocks {
@@ -114,13 +126,23 @@ public class ModBlocks {
 
     //P1 Testing Elements
     //public static final RegistryObject<Block> ERODED_FIZZLER_EMITTER = registerBlock("eroded_fizzler_emitter", () -> new ErodedFizzlerEmitterBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion().lightLevel(blockState -> blockState.getValue(FizzlerEmitterBlock.ACTIVE) ? 10 : 0)),"eroded");
-    public static final RegistryObject<Block> ERODED_FIZZLER_FIELD = registerBlockNoItem("eroded_fizzler_field", () -> new FizzlerFieldBlock(AbstractBlock.Properties.copy(Blocks.AIR).noOcclusion().strength(-1.0F,3600000.0F).noDrops().lightLevel(blockState -> 10)));
+    //public static final RegistryObject<Block> ERODED_FIZZLER_FIELD = registerBlockNoItem("eroded_fizzler_field", () -> new FizzlerFieldBlock(AbstractBlock.Properties.copy(Blocks.AIR).noOcclusion().strength(-1.0F,3600000.0F).noDrops().lightLevel(blockState -> 10)));
     public static final RegistryObject<Block> ERODED_CHAMBER_DOOR = registerBlock("eroded_chamber_door", () -> new ChamberDoorBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion()),"eroded");
 
     public static final RegistryObject<Block> ERODED_SUPER_BUTTON = registerBlock("eroded_super_button", () -> new SuperButtonBlock(stoneCopy(MaterialColor.COLOR_RED).sound(SoundType.STONE).noOcclusion()),"eroded");
     public static final RegistryObject<Block> P1_AUTO_PORTAL = registerBlock("p1_auto_portal", () -> new P1AutoPortalBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()), "eroded");
 
     //public static final RegistryObject<Block> ERODED_ANTLINE = registerBlock("eroded_antline", () -> new AntlineBlock(AbstractBlock.Properties.of(TESTING_ELEMENT, MaterialColor.COLOR_LIGHT_BLUE).lightLevel(i -> 2).noCollission().instabreak()), "eroded");
+
+    //Vintage Testing Elements
+    public static final RegistryObject<Block> VINTAGE_FIZZLER_FIELD = registerBlockNoItem("vintage_fizzler_field", () -> new FizzlerFieldBlock(AbstractBlock.Properties.copy(Blocks.AIR).noOcclusion().strength(-1.0F,3600000.0F).noDrops().lightLevel(blockState -> 10)));
+    public static final RegistryObject<Block> VINTAGE_FIZZLER_EMITTER = registerBlock("vintage_fizzler_emitter", () -> new VintageFizzlerEmitterBlock(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion().lightLevel(blockState -> blockState.getValue(VintageFizzlerEmitterBlock.ACTIVE) ? 10 : 0)),"arbored");
+    public static final RegistryObject<Block> VINTAGE_ANTLINE = registerBlockNoItem("vintage_antline", () -> new AntlineBlock(AbstractBlock.Properties.of(TESTING_ELEMENT, MaterialColor.COLOR_LIGHT_BLUE).lightLevel(i -> 2).noCollission().instabreak()));
+    public static final RegistryObject<Block> VINTAGE_SUPER_BUTTON = registerBlock("vintage_super_button", () -> new VintageSuperButton(stoneCopy(MaterialColor.COLOR_RED).sound(SoundType.STONE).noOcclusion()),"arbored");
+    public static final RegistryObject<Block> VINTAGE_STANDING_BUTTON = registerBlock("vintage_standing_button", () -> new VintageStandingButton(stoneCopy(MaterialColor.COLOR_RED).sound(SoundType.STONE).noOcclusion()),"arbored");
+    public static final RegistryObject<Block> VINTAGE_CHAMBER_DOOR = registerBlock("vintage_chamber_door", () -> new VintageChamberDoor(stoneCopy(MaterialColor.COLOR_BLACK).sound(SoundType.STONE).noOcclusion()),"arbored");
+    public static final RegistryObject<Block> VINTAGE_CUBE_DROPPER = registerBlock("vintage_cube_dropper", () -> new VintageCubeDropperBlock(AbstractBlock.Properties.copy(Blocks.STONE).noOcclusion()),"arbored");
+    public static final RegistryObject<Block> VINTAGE_ANTLINE_INDICATOR = registerBlock("vintage_antline_indicator", () -> new AntlineIndicatorBlock(AbstractBlock.Properties.of(TESTING_ELEMENT).noOcclusion().strength(1.0F).lightLevel(i -> 7)), "arbored");
 
     //Chamber Lights
     public static final RegistryObject<Block> SINGLE_CHAMBER_LIGHT_BLACKPLATE = registerBlock("single_chamber_light_blackplate", () -> new SingleChamberLightBlock(AbstractBlock.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(i -> i.getValue(SingleChamberLightBlock.ACTIVE) ? 15 : 0)), "arbored");

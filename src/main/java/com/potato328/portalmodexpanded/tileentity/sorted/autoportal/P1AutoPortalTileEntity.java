@@ -1,5 +1,6 @@
-package com.potato328.portalmodexpanded.tileentity;
+package com.potato328.portalmodexpanded.tileentity.sorted.autoportal;
 
+import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
 import net.minecraft.tileentity.TileEntityType;
 import net.portalmod.common.sorted.autoportal.AutoPortalTileEntity;
 

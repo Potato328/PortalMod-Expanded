@@ -1,0 +1,33 @@
+{
+  "multipart": [
+    {"when": {"facing": "north", "half": "lower", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door"}},
+    {"when": {"facing": "east", "half": "lower", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door", "y": 90}},
+    {"when": {"facing": "south", "half": "lower", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door", "y": 180}},
+    {"when": {"facing": "west", "half": "lower", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door", "y": 270}},
+
+    {"when": {"facing": "north", "half": "upper", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism"}},
+    {"when": {"facing": "east", "half": "upper", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism", "y": 90}},
+    {"when": {"facing": "south", "half": "upper", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism", "y": 180}},
+    {"when": {"facing": "west", "half": "upper", "side": "left", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism", "y": 270}},
+
+    {"when": {"facing": "north", "half": "lower", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_open"}},
+    {"when": {"facing": "east", "half": "lower", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_open", "y": 90}},
+    {"when": {"facing": "south", "half": "lower", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_open", "y": 180}},
+    {"when": {"facing": "west", "half": "lower", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_open", "y": 270}},
+
+    {"when": {"facing": "north", "half": "upper", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism_open"}},
+    {"when": {"facing": "east", "half": "upper", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism_open", "y": 90}},
+    {"when": {"facing": "south", "half": "upper", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism_open", "y": 180}},
+    {"when": {"facing": "west", "half": "upper", "side": "left", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_mechanism_open", "y": 270}},
+
+    {"when": {"facing": "north", "half": "lower", "side": "left"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_left"}},
+    {"when": {"facing": "east", "half": "lower", "side": "left"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_left", "y": 90}},
+    {"when": {"facing": "south", "half": "lower", "side": "left"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_left", "y": 180}},
+    {"when": {"facing": "west", "half": "lower", "side": "left"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_left", "y": 270}},
+
+    {"when": {"facing": "north", "half": "lower", "side": "right"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_right"}},
+    {"when": {"facing": "east", "half": "lower", "side": "right"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_right", "y": 90}},
+    {"when": {"facing": "south", "half": "lower", "side": "right"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_right", "y": 180}},
+    {"when": {"facing": "west", "half": "lower", "side": "right"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_chamber_door_planks_right", "y": 270}}
+  ]
+}

@@ -3,7 +3,7 @@ package com.potato328.portalmodexpanded.client.renderer;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 
-import com.potato328.portalmodexpanded.tileentity.SingleAutoPortalTileEntity;
+import com.potato328.portalmodexpanded.tileentity.sorted.autoportal.SingleAutoPortalTileEntity;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.LightTexture;
@@ -22,8 +22,8 @@ import net.portalmod.common.sorted.autoportal.AutoPortalModel;
 
 import java.util.Optional;
 
-import static com.potato328.portalmodexpanded.block.SingleAutoPortalBlock.DIRECTION;
-import static com.potato328.portalmodexpanded.block.SingleAutoPortalBlock.FACING;
+import static com.potato328.portalmodexpanded.block.sorted.autoportal.SingleAutoPortalBlock.DIRECTION;
+import static com.potato328.portalmodexpanded.block.sorted.autoportal.SingleAutoPortalBlock.FACING;
 
 
 public class SingleAutoPortalTER extends TileEntityRenderer<SingleAutoPortalTileEntity> {

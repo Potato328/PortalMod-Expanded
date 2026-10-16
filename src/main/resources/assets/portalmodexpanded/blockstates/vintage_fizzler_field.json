@@ -1,0 +1,20 @@
+{
+  "comment": "I tried to do this in multipart, like everything else, but the json hates me and wouldn't render the models on the y axis.",
+
+  "variants": {
+    "rotated=false,half=lower,axis=y": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom", "x": 90, "y": 180},
+    "rotated=false,half=upper,axis=y": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_top", "x": 90, "y": 180},
+    "rotated=true,half=lower,axis=y":  {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom", "x": 90, "y": 90},
+    "rotated=true,half=upper,axis=y":  {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_top", "x": 90, "y": 90},
+
+    "rotated=false,half=lower,axis=x": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom", "y": 90},
+    "rotated=false,half=lower,axis=z": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom"},
+    "rotated=false,half=upper,axis=x": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_top", "y": 90},
+    "rotated=false,half=upper,axis=z": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_top"},
+
+    "rotated=true,half=lower,axis=x": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom_horizontal", "y": 270},
+    "rotated=true,half=lower,axis=z": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_bottom_horizontal", "y": 180},
+    "rotated=true,half=upper,axis=x": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_top_horizontal", "y": 270},
+    "rotated=true,half=upper,axis=z": {"model": "portalmodexpanded:block/vintage/vintage_fizzler_field_top_horizontal", "y": 180}
+  }
+}

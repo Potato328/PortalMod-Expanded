@@ -1,4 +1,4 @@
-package com.potato328.portalmodexpanded.block;
+package com.potato328.portalmodexpanded.block.sorted.chamberlight;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -12,8 +12,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.portalmod.common.blocks.ChamberLightsBlock;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.util.Optional;
 import java.util.Random;
 

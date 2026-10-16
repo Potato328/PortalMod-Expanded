@@ -2,12 +2,18 @@ package com.potato328.portalmodexpanded.tileentity;
 
 import com.potato328.portalmodexpanded.PortalModExpanded;
 import com.potato328.portalmodexpanded.block.ModBlocks;
+import com.potato328.portalmodexpanded.block.sorted.antline.VintageAntlineTileEntity;
+import com.potato328.portalmodexpanded.block.sorted.chamberdoor.VintageChamberDoorTileEntity;
+import com.potato328.portalmodexpanded.block.sorted.cubedropper.VintageCubeDropperTileEntity;
+import com.potato328.portalmodexpanded.tileentity.sorted.autoportal.P1AutoPortalTileEntity;
+import com.potato328.portalmodexpanded.tileentity.sorted.autoportal.SingleAutoPortalTileEntity;
+import com.potato328.portalmodexpanded.tileentity.sorted.fizzler.ErodedFizzlerTileEntity;
+import com.potato328.portalmodexpanded.tileentity.sorted.fizzler.VintageFizzlerTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.portalmod.common.sorted.autoportal.AutoPortalTileEntity;
 import net.portalmod.core.init.TileEntityTypeInit;
 
 import java.util.Set;
@@ -25,9 +31,17 @@ public class ModTileEntities {
     public static final RegistryObject<TileEntityType<P1AutoPortalTileEntity>> P1_AUTOPORTAL = TILE_ENTITY.register("p1_autoportal", () -> TileEntityType.Builder.of(P1AutoPortalTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getAutoPortalBlocks)).build(null));
     public static final RegistryObject<TileEntityType<FrameTileTileEntity>> FRAME_TILES = TILE_ENTITY.register("frame_tiles", () -> TileEntityType.Builder.of(FrameTileTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getFrameTileBlocks)).build(null));
 
+    public static final RegistryObject<TileEntityType<VintageFizzlerTileEntity>> VINTAGE_FIZZLER = TILE_ENTITY.register("vintage_fizzler", () -> TileEntityType.Builder.of(VintageFizzlerTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getVintageFizzlerBlocks)).build(null));
+    public static final RegistryObject<TileEntityType<VintageAntlineTileEntity>> VINTAGE_ANTLINE = TILE_ENTITY.register("vintage_antline_te", () -> TileEntityType.Builder.of(VintageAntlineTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getVintageAntlineBlocks)).build(null));
+    public static final RegistryObject<TileEntityType<VintageCubeDropperTileEntity>> VINTAGE_CUBE_DROPPER = TILE_ENTITY.register("vintage_cube_dropper", () -> TileEntityType.Builder.of(VintageCubeDropperTileEntity::new, TileEntityTypeInit.getBlocks(ModTileEntities::getVintageCubeDropperBlocks)).build(null));
+
 
     public static Set<Block> getErodedFizzlerBlocks(Set<Block> blocks) {
         //blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
+        return blocks;
+    }
+    public static Set<Block> getVintageFizzlerBlocks(Set<Block> blocks) {
+        blocks.add(ModBlocks.VINTAGE_FIZZLER_EMITTER.get());
         return blocks;
     }
     public static Set<Block> getCameraP2Blocks(Set<Block> blocks) {
@@ -46,6 +60,14 @@ public class ModTileEntities {
     public static Set<Block> getFrameTileBlocks(Set<Block> blocks) {
         //blocks.add(ModBlocks.FRAME_TILES.get());
         //blocks.add(ModBlocks.RUSTY_FRAME_TILES.get());
+        return blocks;
+    }
+    public static Set<Block> getVintageAntlineBlocks(Set<Block> blocks) {
+        blocks.add(ModBlocks.VINTAGE_ANTLINE.get());
+        return blocks;
+    }
+    public static Set<Block> getVintageCubeDropperBlocks(Set<Block> blocks) {
+        blocks.add(ModBlocks.VINTAGE_CUBE_DROPPER.get());
         return blocks;
     }
 

@@ -2,9 +2,9 @@ package com.potato328.portalmodexpanded.client.renderer;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.potato328.portalmodexpanded.PortalModExpanded;
-import com.potato328.portalmodexpanded.block.P1AutoPortalBlock;
+import com.potato328.portalmodexpanded.block.sorted.autoportal.P1AutoPortalBlock;
 import com.potato328.portalmodexpanded.client.renderer.model.P1AutoPortalModel;
+import com.potato328.portalmodexpanded.tileentity.sorted.autoportal.P1AutoPortalTileEntity;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.model.RenderMaterial;
@@ -22,7 +22,7 @@ import net.portalmod.common.sorted.portal.OrthonormalBasis;
 import net.portalmod.core.math.Mat4;
 import net.portalmod.core.math.Vec3;
 
-public class P1AutoPortalTER extends TileEntityRenderer<AutoPortalTileEntity> {
+public class P1AutoPortalTER extends TileEntityRenderer<P1AutoPortalTileEntity> {
     public static RenderMaterial MATERIAL  = new RenderMaterial(AtlasTexture.LOCATION_BLOCKS, new ResourceLocation("portalmodexpanded", "entity/p1_autoportal"));
     private final P1AutoPortalModel model = new P1AutoPortalModel();
 
@@ -33,7 +33,7 @@ public class P1AutoPortalTER extends TileEntityRenderer<AutoPortalTileEntity> {
 
 
     @Override
-    public void render(AutoPortalTileEntity be, float partialTicks, MatrixStack matrixStack, IRenderTypeBuffer renderBuffer, int light, int overlay) {
+    public void render(P1AutoPortalTileEntity be, float partialTicks, MatrixStack matrixStack, IRenderTypeBuffer renderBuffer, int light, int overlay) {
         if(be.getBlockState().getBlock() instanceof P1AutoPortalBlock) {
             P1AutoPortalBlock block = (P1AutoPortalBlock)be.getBlockState().getBlock();
             Direction facing = be.getBlockState().getValue(P1AutoPortalBlock.FACING);

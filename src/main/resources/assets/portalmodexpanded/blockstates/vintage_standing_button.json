@@ -1,0 +1,17 @@
+{
+  "multipart": [
+    {"when": {"half":  "lower", "active":  "false", "facing": "up"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button"}},
+    {"when": {"half":  "lower", "active":  "false", "facing": "down"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button", "x":  180}},
+    {"when": {"half":  "lower", "active":  "false", "facing": "north"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button", "x": 90}},
+    {"when": {"half":  "lower", "active":  "false", "facing": "east"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button", "x": 90, "y": 90}},
+    {"when": {"half":  "lower", "active":  "false", "facing": "south"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button", "x": 90, "y": 180}},
+    {"when": {"half":  "lower", "active":  "false", "facing": "west"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button", "x": 90, "y": 270}},
+    {"when": {"half":  "lower", "active":  "true", "facing": "up"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button_pressed"}},
+    {"when": {"half":  "lower", "active":  "true", "facing": "down"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button_pressed", "x":  180}},
+    {"when": {"half":  "lower", "active":  "true", "facing": "north"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button_pressed", "x": 90}},
+    {"when": {"half":  "lower", "active":  "true", "facing": "east"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button_pressed", "x": 90, "y": 90}},
+    {"when": {"half":  "lower", "active":  "true", "facing": "south"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button_pressed", "x": 90, "y": 180}},
+    {"when": {"half":  "lower", "active":  "true", "facing": "west"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_standing_button_pressed", "x": 90, "y": 270}}
+
+  ]
+}

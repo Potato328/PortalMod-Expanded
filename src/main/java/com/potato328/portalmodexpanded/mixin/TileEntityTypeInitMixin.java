@@ -17,21 +17,29 @@ public class TileEntityTypeInitMixin {
         blocks.add(ModBlocks.ARBORED_CHAMBER_DOOR.get());
         blocks.add(ModBlocks.ERODED_CHAMBER_DOOR.get());
         blocks.add(ModBlocks.ARBORED_CHAMBER_DOOR_P1.get());
+        blocks.add(ModBlocks.VINTAGE_CHAMBER_DOOR.get());
     }
 
     @Inject(method="getCubeDropperBlocks", at=@At("HEAD"), remap = false)
     private static void portalmodexpanded$addCubeDropperBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
         blocks.add(ModBlocks.ARBORED_CUBE_DROPPER.get());
+        blocks.add(ModBlocks.VINTAGE_CUBE_DROPPER.get());
     }
 
     @Inject(method="getFizzlerEmitterBlocks", at=@At("HEAD"), remap = false)
     private static void portalmodexpanded$addFizzlerBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
         //blocks.add(ModBlocks.ERODED_FIZZLER_EMITTER.get());
+        blocks.add(ModBlocks.VINTAGE_FIZZLER_EMITTER.get());
     }
 
     @Inject(method="getAutoPortalBlocks", at=@At("HEAD"), remap = false)
     private static void portalmodexpanded$addAutoPortalBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
         blocks.add(ModBlocks.SINGLE_AUTO_PORTAL.get());
         blocks.add(ModBlocks.P1_AUTO_PORTAL.get());
+    }
+
+    @Inject(method="getAntlineBlocks", at=@At("HEAD"), remap = false)
+    private static void portalmodexpanded$addAntlineBlocks(Set<Block> blocks, CallbackInfoReturnable<Set<Block>> cir) {
+        blocks.add(ModBlocks.VINTAGE_ANTLINE.get());
     }
 }

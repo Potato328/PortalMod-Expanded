@@ -7,7 +7,18 @@ modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
 authors = "${mod_authors}"
-description = '''${mod_description}'''
+description = '''
+PortalMod: Expanded adds more building blocks and test elements to PortalMod,
+expanding the selection to include both portal games and all styles of Portal 2.
+
+  MAIN TEAM
+  Starch-Based Vegetable - Programmer
+  Trufa - PortalMod: Deco Blocks / Art
+  KonnyBoi - Art
+
+  CONTRIBUTORS
+  maybejahmess - Arbored Chamber Doors
+  Tec - The Original Fizzler Texture Shader and Allowing Its Use'''
 
 [[dependencies.${mod_id}]]
 modId = "forge"

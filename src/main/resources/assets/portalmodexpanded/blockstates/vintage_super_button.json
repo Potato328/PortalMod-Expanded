@@ -1,0 +1,19 @@
+{
+  "multipart": [
+    {"when": {"mode": "normal", "pressed": "false", "corner": "up_left", "active": "false"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button"}},
+    {"when": {"mode": "normal", "pressed": "false", "corner": "up_left", "active": "true"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button"}},
+    {"when": {"mode": "normal", "pressed": "true", "corner": "up_left", "active": "false"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button_pressed"}},
+    {"when": {"mode": "normal", "pressed": "true", "corner": "up_left", "active": "true"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button_pressed"}},
+    
+    {"when": {"mode": "persistent", "pressed": "false", "corner": "up_left", "active": "false"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button"}},
+    {"when": {"mode": "persistent", "pressed": "false", "corner": "up_left", "active": "true"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button"}},
+    {"when": {"mode": "persistent", "pressed": "true", "corner": "up_left", "active": "false"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button_pressed"}},
+    {"when": {"mode": "persistent", "pressed": "true", "corner": "up_left", "active": "true"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button_pressed"}},
+    
+    
+    {"when": {"mode": "toggle", "pressed": "false", "corner": "up_left", "active": "false"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button"}},
+    {"when": {"mode": "toggle", "pressed": "false", "corner": "up_left", "active": "true"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button"}},
+    {"when": {"mode": "toggle", "pressed": "true", "corner": "up_left", "active": "false"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button_pressed"}},
+    {"when": {"mode": "toggle", "pressed": "true", "corner": "up_left", "active": "true"}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_super_button_pressed"}}
+  ]
+}

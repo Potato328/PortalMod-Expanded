@@ -1,4 +1,4 @@
-package com.potato328.portalmodexpanded.block;
+package com.potato328.portalmodexpanded.block.sorted.fizzler;
 
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
 import net.minecraft.block.BlockState;
@@ -10,9 +10,9 @@ import net.portalmod.common.sorted.fizzler.FizzlerEmitterBlock;
 import net.portalmod.common.sorted.fizzler.FizzlerFieldBlock;
 
 
-public class ErodedFizzlerEmitterBlock extends FizzlerEmitterBlock {
+public class VintageFizzlerEmitterBlock extends FizzlerEmitterBlock {
 
-    public ErodedFizzlerEmitterBlock(Properties properties) {
+    public VintageFizzlerEmitterBlock(Properties properties) {
 
         super(properties);
 
@@ -26,7 +26,7 @@ public class ErodedFizzlerEmitterBlock extends FizzlerEmitterBlock {
 
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return this.hasTileEntity(state) ? ModTileEntities.ERODED_FIZZLER.get().create() : null;
+        return this.hasTileEntity(state) ? ModTileEntities.VINTAGE_FIZZLER.get().create() : null;
     }
     @Override
     public boolean isValidConnection(BlockState state, BlockState neighbor) {
@@ -39,7 +39,7 @@ public class ErodedFizzlerEmitterBlock extends FizzlerEmitterBlock {
 
         }
 
-        if (neighbor.getBlock() instanceof ErodedFizzlerEmitterBlock) {
+        if (neighbor.getBlock() instanceof VintageFizzlerEmitterBlock) {
 
             return neighbor.getValue(FACING) == state.getValue(FACING).getOpposite()
                     && neighbor.getValue(HALF) == state.getValue(HALF)

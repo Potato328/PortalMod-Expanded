@@ -1,0 +1,4 @@
+{"multipart": [
+  {"when": {"corner": "up_left", "half": "lower", "open": false}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_cube_dropper"}},
+  {"when": {"corner": "up_left", "half": "lower", "open": true}, "apply": {"model": "portalmodexpanded:block/vintage/vintage_cube_dropper_open"}}
+]}

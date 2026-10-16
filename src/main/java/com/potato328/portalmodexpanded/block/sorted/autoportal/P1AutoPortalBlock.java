@@ -1,4 +1,4 @@
-package com.potato328.portalmodexpanded.block;
+package com.potato328.portalmodexpanded.block.sorted.autoportal;
 
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
 import net.minecraft.block.BlockState;
