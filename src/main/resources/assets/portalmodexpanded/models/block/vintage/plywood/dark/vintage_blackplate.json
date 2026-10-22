@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "particle": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark",
+    "side": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark",
+    "top": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark",
+    "bottom": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark"
+  }
+}

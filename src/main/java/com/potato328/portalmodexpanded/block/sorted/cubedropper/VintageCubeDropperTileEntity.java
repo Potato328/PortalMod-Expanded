@@ -1,9 +1,11 @@
 package com.potato328.portalmodexpanded.block.sorted.cubedropper;
 
+import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.BlockPos;
 
 import net.portalmod.common.sorted.antline.indicator.IndicatorInfo;
@@ -13,9 +15,9 @@ import net.portalmod.common.sorted.cubedropper.CubeDropperTileEntity;
 
 public class VintageCubeDropperTileEntity extends CubeDropperTileEntity {
 
-
-
-
+    public VintageCubeDropperTileEntity() {
+        super();
+    }
 
     @Override
     public void tick() {

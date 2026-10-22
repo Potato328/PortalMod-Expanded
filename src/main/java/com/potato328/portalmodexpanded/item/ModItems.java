@@ -16,7 +16,7 @@ public class ModItems {
     }
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "portalmodexpanded");
 
-    public static final RegistryObject<Item> VINTAGE_ANTLINE = ITEMS.register("vintage_antline", () -> new AntlineBlockItem(ModBlocks.VINTAGE_ANTLINE.get(), properties("arbored")));
+    public static final RegistryObject<Item> VINTAGE_ANTLINE = ITEMS.register("vintage_antline", () -> new AntlineBlockItem(ModBlocks.VINTAGE_ANTLINE.get(), properties("vintage")));
 
     public static Item.Properties properties(String tab) {
         switch (tab) {
@@ -24,8 +24,10 @@ public class ModItems {
                 return new Item.Properties().tab(ModInventoryTab.ARBORED_TAB);
             case "eroded":
                 return new Item.Properties().tab(ModInventoryTab.ERODED_TAB);
-            case "deco":
-                return new Item.Properties().tab(ModInventoryTab.DECO_TAB);
+            case "vintage":
+                return new Item.Properties().tab(ModInventoryTab.VINTAGE_TAB);
+            case "expanded":
+                return new Item.Properties().tab(ModInventoryTab.EXPANDED_TAB);
             default:
                 return null;
         }

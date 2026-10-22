@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "particle": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_1",
+    "side": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_1",
+    "top": "portalmod:block/vintage_blackplate_top",
+    "bottom": "portalmod:block/vintage_blackplate_bottom"
+  }
+}

@@ -1,7 +1,8 @@
-package com.potato328.portalmodexpanded;
+package com.potato328.portalmodexpanded.client;
 
 import com.potato328.portalmodexpanded.block.sorted.antline.VintageAntlineBakedModel;
 import com.potato328.portalmodexpanded.block.sorted.antline.VintageAntlineLoader;
+import com.potato328.portalmodexpanded.util.SecondaryPanelTextures;
 import net.minecraft.client.renderer.texture.AtlasTexture;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,13 +23,23 @@ public class ClientEventHandler {
             event.addSprite(new ResourceLocation("portalmodexpanded", "entity/p1_autoportal"));
             event.addSprite(new ResourceLocation("portalmodexpanded", "entity/vintage_cube_dropper_door"));
 
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/blue/vintage_blackplate_blue_2x2_top_right"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/blue/vintage_blackplate_blue_2x2_top_left"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/blue/vintage_blackplate_blue_2x2_bottom_right"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/blue/vintage_blackplate_blue_2x2_bottom_left"));
+
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/plywood/vintage_plywood_light_2x2_top_right"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/plywood/vintage_plywood_light_2x2_top_left"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/plywood/vintage_plywood_light_2x2_bottom_right"));
+            event.addSprite(new ResourceLocation("portalmodexpanded", "block/vintage/plywood/vintage_plywood_light_2x2_bottom_left"));
+
             for(ResourceLocation texture : VintageAntlineBakedModel.getAllTextures())
                 event.addSprite(texture);
         }
     }
     @SubscribeEvent
     public static void onLoaderRegister(ModelRegistryEvent event) {
-        registerLoader("vintage_antline",           new VintageAntlineLoader());
+        registerLoader("vintage_antline", new VintageAntlineLoader());
     }
 
     private static void registerLoader(String name, IModelLoader<?> loader) {

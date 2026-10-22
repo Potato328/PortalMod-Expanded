@@ -1,0 +1,10 @@
+{
+  "parent": "portalmod:block/cube_corner_top",
+  "textures": {
+    "particle": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_1",
+    "top": "portalmod:block/vintage_blackplate_top",
+    "back": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_panel_top",
+    "left": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_panel_top_left",
+    "right": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_panel_top_right"
+  }
+}

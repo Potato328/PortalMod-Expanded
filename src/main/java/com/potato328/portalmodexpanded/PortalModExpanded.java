@@ -1,11 +1,12 @@
 package com.potato328.portalmodexpanded;
 
 import com.potato328.portalmodexpanded.block.ModBlocks;
+import com.potato328.portalmodexpanded.client.ClientEventHandler;
 import com.potato328.portalmodexpanded.client.renderer.CameraP2TER;
 import com.potato328.portalmodexpanded.client.renderer.P1AutoPortalTER;
 import com.potato328.portalmodexpanded.client.renderer.SingleAutoPortalTER;
-import com.potato328.portalmodexpanded.client.renderer.VintageCubeDropperTER;
 import com.potato328.portalmodexpanded.item.ModItems;
+import com.potato328.portalmodexpanded.network.ModNetwork;
 import com.potato328.portalmodexpanded.tileentity.ModTileEntities;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -35,6 +36,8 @@ public class PortalModExpanded {
         ModItems.register(eventBus);
         MinecraftForge.EVENT_BUS.register(new EventHandler());
         MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
+        //MinecraftForge.EVENT_BUS.register(new VintageBlackplateSecondarySyncHandler());
+        //MinecraftForge.EVENT_BUS.register(new DecalTextureStitchHandler());
         ModTileEntities.TILE_ENTITY.register(eventBus);
 
 
@@ -42,7 +45,7 @@ public class PortalModExpanded {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        ModNetwork.register();
     }
     private void doClientStuff(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
@@ -106,7 +109,6 @@ public class PortalModExpanded {
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.CAMERA_P2.get(), CameraP2TER::new);
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.SINGLE_AUTOPORTAL.get(), SingleAutoPortalTER::new);
             ClientRegistry.bindTileEntityRenderer(ModTileEntities.P1_AUTOPORTAL.get(), P1AutoPortalTER::new);
-            ClientRegistry.bindTileEntityRenderer(ModTileEntities.VINTAGE_CUBE_DROPPER.get(), VintageCubeDropperTER::new);
 
 
         });

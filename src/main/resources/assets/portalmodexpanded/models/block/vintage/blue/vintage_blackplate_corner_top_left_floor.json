@@ -1,0 +1,9 @@
+{
+  "parent": "portalmod:block/cube_corner_floor",
+  "textures": {
+    "particle": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_1",
+    "top": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_panel_top_left",
+    "bottom": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_panel_ceiling_top_right",
+    "side": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_3"
+  }
+}

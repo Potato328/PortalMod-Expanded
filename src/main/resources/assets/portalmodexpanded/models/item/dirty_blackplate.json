@@ -1,9 +1,9 @@
 {
   "parent": "portalmod:block/arbored_blackplate",
   "textures": {
-    "side": "portalmodexpanded:block/dirty/dirty_blackplate",
-    "top": "portalmodexpanded:block/dirty/dirty_blackplate_tiles",
-    "bottom": "portalmodexpanded:block/dirty/dirty_blackplate_tiles",
+    "side": "portalmodexpanded:block/dirty/dirty_blackplate_1",
+    "top": "portalmodexpanded:block/dirty/dirty_blackplate_tiles_1",
+    "bottom": "portalmodexpanded:block/dirty/dirty_blackplate_tiles_1",
     "f_side": "portalmodexpanded:block/empty",
     "f_top": "portalmodexpanded:block/empty",
     "f_bottom": "portalmodexpanded:block/empty"

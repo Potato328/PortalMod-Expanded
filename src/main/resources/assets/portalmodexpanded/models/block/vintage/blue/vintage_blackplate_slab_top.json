@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "portalmodexpanded:block/vintage/blue/vintage_blackplate_blue_1",
+    "side": "portalmodexpanded:block/vintage/dark/vintage_blackplate_tiles",
+    "bottom": "portalmodexpanded:block/vintage/dark/vintage_blackplate_slab_bottom",
+    "top": "portalmodexpanded:block/vintage/dark/vintage_blackplate_slab_top"
+  }
+}

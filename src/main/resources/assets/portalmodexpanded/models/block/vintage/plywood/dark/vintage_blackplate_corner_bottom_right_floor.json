@@ -1,0 +1,9 @@
+{
+  "parent": "portalmod:block/cube_corner_floor",
+  "textures": {
+    "particle": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark",
+    "top": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark_panel_bottom_right",
+    "bottom": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark_panel_ceiling_bottom_left",
+    "side": "portalmodexpanded:block/vintage/plywood/vintage_plywood_dark"
+  }
+}

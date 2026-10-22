@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "portalmodexpanded:item/vintage_fizzler_emitter"
+  }
+}
